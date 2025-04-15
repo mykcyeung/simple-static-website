@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Zipping HTML files..."
+      - mkdir build
+      - cp index.html build/
+artifacts:
+  base-directory: build
+  files:
+    - "**/*"
